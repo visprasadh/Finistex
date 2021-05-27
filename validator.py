@@ -11,7 +11,8 @@ def validator(input_string, fa_dict):
         temp = []
         copycat = current_state.copy()
         for y in current_state:
-            temp += fa_dict['transitions'][y][x]
+            if x in fa_dict['transitions'][y]:
+                temp += fa_dict['transitions'][y][x]
             copycat.pop(0)
         current_state = copycat.copy()
         current_state += temp

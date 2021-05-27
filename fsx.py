@@ -12,6 +12,8 @@ print("Enter Finite State Expression:")
 fa = input()
 fa_dict = parser(fa, fa_dict)
 
+print(fa_dict)
+
 while(looper):
     print('Enter input string: Leave empty to quit')
     input_string = input()
