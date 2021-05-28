@@ -1,8 +1,8 @@
 # Finite State Expression (FiniStEx) Proof of Concept
 # Authored by Vishnuprasadh
 
-from parser import parser
-from validator import validator
+import parser
+import validator
 
 fa_dict = {}
 
